@@ -86,17 +86,82 @@
 </article>
 </div>
 <div>
-    <form action="/next-page" method="post">
+    <form action="/endpoint" method="post">
     <h2><span>Suscríbete a nuestra newsletter</span></h2>
     
 
         <fieldset>
+            <div>
+            <legend> DATOS PERSONALES</legend>
+
+            <label for="name">Nombre:</label>
+            <input type="text"  id="name" name="name" required>
+
+            <label for="surname">Apellidos:</label>
+            <input type="text"  id="surname" name="surname" required>
+            </div>
+            <br>
+            <div>
+                <label for="fechaNac">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNac" name="fechaNac">
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>CORREO ELECTRONICO</legend>
+
+            <label for="email">Email:</label>
+            <input type="email"  id="email" name="email" placeholder="ejemplo@tuemail.com" required>
+
+            <label for="pwd">Contraseña:</label>
+            <input type="password"  id="pwd" name="password" required>
+        </fieldset>
+
+         <fieldset>
+             <legend>AJUSTES PERSONALIZADOS</legend>
+             <div>
+                 <p><b>Marque sus preferencias:</b></p>
+
+                <label for="recetas">Menú semanal</label>
+                <input type="checkbox"  id="recetas" name="preferencias">
+
+                <label for="menaje">Utensilios de cocina</label>
+                <input type="checkbox"  id="menaje" name="preferencias">
+
+                <label for="tips">Trucos y consejos</label>
+                <input type="checkbox"  id="tips" name="preferencias">
 
 
+             </div>
+             <br>
+             <div>
+                <p><b>Consiente dar sus datos personales para fines comerciales:</b></p>
 
+                <label for="afirmativo">SI</label>
+                 <input type="radio" id="afirmativo" value="S" name="consentimiento">
+
+                 <label for="negativo">NO</label>
+                <input type="radio" id="negativo" value="N" name="consentimiento">
+            </div>
+
+            <div>
+                <label for="recetas">Mis recetas favoritas</label>
+                <select id="recetas">
+                    <option></option>
+                    <option value="RC">Carnes</option>
+                    <option value="RP">Pescados y mariscos</option>
+                    <option value="RE">Entrantes</option>
+                    <option value="RP">Postres y recetas dulces</option>
+                    <option value="RI">Recetas internacionales</option>
+                </select>
+            </div>
 
         </fieldset>
 
+        <button type="submit">Enviar</button>
+        <button type="reset">Deshacer</button>
 
 
 

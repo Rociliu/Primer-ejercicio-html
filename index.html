@@ -6,8 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer ejercicio de HTML con Belén</title>
 </head>
+
 <body>
-<header></header>
+<header>
+    <h1>A FUEGO LENTO</h1>
+<nav>
+    <a href="https://www.afuegolento.com/"> Entra en la web </a>
+
+    <img src="https://i.pinimg.com/originals/1d/dd/a3/1ddda3bb00c4fee80232e9aa13fdc1bd.png" alt="gorro de cocina">
+</nav>
+</header>
+<div>
+<article>
+    <h2>RECETAS</h2>
+    <p>Si te gusta viajar a través del paladar, toma nota de estas <em>recetas fáciles</em> de inspiración <strong>internacional</strong>. Van a trasladarte de tu cocina a <i>Francia, India o Perú</i>. Del perfecto risotto italiano al icónico wok tailandés, el cebiche peruano, el desayuno al estilo israelí o el tajín de Marruecos.</p>
+    <p> Estamos entregados a la <em>gastronomía</em>. Ya sea en casa o cada vez que planeamos salir fuera. Nos gusta devorar nuestros propios platos y salir a probar los de fuera, algo con lo que soñamos cuando planeamos cada uno de nuestros viajes. Por eso hemos decidido recorrer el globo sin salir de nuestra cocina -o a través de ella- con diferentes platos de cocina internacional. ¿Cómo? Con recetas saladas con un toque viajero.</p>
+    <p>Vamos a volar hasta Perú, Francia o la exótica India. Apúntate estas seis recetas muy fáciles de preparar en casa y cada día tendrás una nueva sensación <strong>gourmet</strong>. Podrás rescatar algún plato que te enamoró en uno de tus viajes o descubrir nuevos y excitantes sabores. <b>Trotamundos:</b> ¡preparad vuestras cazuelas que despegamos!</p>
+        <section>  
+            <h3>CARNES </h3> 
+            <img src="https://estag.fimagenes.com/busquedas/recetas-con-carne_2_900.jpg" alt="plato con carne"> 
+            <ul>
+                <li>Aves</li>
+                <li>Cordero</li>
+                <li>Cerdo</li>
+                <li>Ternera</li>
+            </ul>
+        </section> 
+
+        <section>
+            <h3>PESCADOS</h3>
+            <img src="https://hips.hearstapps.com/es.h-cdn.co/mcres/images/mi-casa/recetas/recetas-con-pescado/dorada-con-alcachofas-y-tomates/1370892-1-esl-ES/dorada-con-alcachofas-y-tomates.jpg" alt="plato con pescado">
+            <ul>
+                 <li>Pescados</li>
+                 <li>Mariscos</li>        
+            </ul>
+        </section>
+
+        <section>
+            <h3>ENTRANTES</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb6oQ5I1skQv0bnECqBzPeV85sTy_Ire0Ndw&usqp=CAU" alt="plato con crema de verduras">
+            <ul>
+                <li>Sopas y Cremas</li>
+                <li>Guisos</li>
+                <li>Ensaladas</li>
+                <li>Huevos y Verduras</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>POSTRES</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEsYB6vjjRnK2aQ51VOgm6qRMH2QLa-BhrA&usqp=CAU" alt="tarta de chocolate">
+            <ul>
+                <li>Tartas</li>
+                <li>Bizcochos</li>
+                <li>Helados y Suflés</li>
+            </ul>
+        </section>
+</article>
+<article>
+    <h2>RECETAS INTERNACIONALES</h2>
+    <img src="https://images.hola.com/imagenes/cocina/noticiaslibros/20210205183820/pollo-recetas-cocina-internacional/0-916-882/tajine-pollo-a.jpg" alt="tajín con cuscús">
+    <ol>
+        <li>Italiana</li>
+        <li>Mexicana</li>
+        <li>Griega</li>
+        <li>Hindú</li>
+        <li>Peruana</li>
+        <li>Japonesa</li>
+    </ol>
+</article>
+
+<article>
+    <h2>BLOG</h2>
+    <ol>
+        <li>Tipos de hojaldre</li>
+        <li>El verdadero origen de la pizza</li>
+        <li>Cómo saber si el pescado es fresco</li>
+    </ol>
+</article>
+</div>
+<div>
+    <form action="/endpoint" method="post">
+    <h2><span>Suscríbete a nuestra newsletter</span></h2>
     
+
+        <fieldset>
+            <div>
+            <legend> DATOS PERSONALES</legend>
+
+            <label for="name">Nombre:</label>
+            <input type="text"  id="name" name="name" required>
+
+            <label for="surname">Apellidos:</label>
+            <input type="text"  id="surname" name="surname" required>
+            </div>
+            <br>
+            <div>
+                <label for="fechaNac">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNac" name="fechaNac">
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>CORREO ELECTRONICO</legend>
+
+            <label for="email">Email:</label>
+            <input type="email"  id="email" name="email" placeholder="ejemplo@tuemail.com" required>
+
+            <label for="pwd">Contraseña:</label>
+            <input type="password"  id="pwd" name="password" required>
+        </fieldset>
+
+         <fieldset>
+             <legend>AJUSTES PERSONALIZADOS</legend>
+             <div>
+                 <p><b>Marque sus preferencias:</b></p>
+
+                <label for="recetas">Menú semanal</label>
+                <input type="checkbox"  id="recetas" name="preferencias">
+
+                <label for="menaje">Utensilios de cocina</label>
+                <input type="checkbox"  id="menaje" name="preferencias">
+
+                <label for="tips">Trucos y consejos</label>
+                <input type="checkbox"  id="tips" name="preferencias">
+
+
+             </div>
+             <br>
+             <div>
+                <p><b>Consiente dar sus datos personales para fines comerciales:</b></p>
+
+                <label for="afirmativo">SI</label>
+                 <input type="radio" id="afirmativo" value="S" name="consentimiento">
+
+                 <label for="negativo">NO</label>
+                <input type="radio" id="negativo" value="N" name="consentimiento">
+            </div>
+
+            <div>
+                <label for="recetas">Mis recetas favoritas</label>
+                <select id="recetas">
+                    <option></option>
+                    <option value="RC">Carnes</option>
+                    <option value="RP">Pescados y mariscos</option>
+                    <option value="RE">Entrantes</option>
+                    <option value="RP">Postres y recetas dulces</option>
+                    <option value="RI">Recetas internacionales</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Deshacer</button>
+
+
+
+    </form>
+
+
+</div>
+<footer>
+    <nav>
+        <ul>
+            <li> <a href="https://www.afuegolento.com/contacto"> Contacto </a></li>
+            <li> <a href="https://www.afuegolento.com/autor/koldo-royo-coloma/97/"> Sobre mí </a></li>
+            <li> <a href="https://www.afuegolento.com/terminos-condiciones"> Textos Legales </a></li>
+        </ul>
+    </nav>    
+</footer>    
 </body>
 </html>
